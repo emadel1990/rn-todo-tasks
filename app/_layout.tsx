@@ -1,24 +1,32 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
+import '@/i18n';
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import i18n from '@/i18n';
+import { useThemeStore } from '@/stores/theme/theme.store';
+import { ConvexProvider, ConvexReactClient } from 'convex/react';
+import { useEffect } from 'react';
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+const convex = new ConvexReactClient(process.env.EXPO_PUBLIC_CONVEX_URL!, {
+	unsavedChangesWarning: false,
+});
+
+function I18nSync() {
+	const { language } = useThemeStore();
+	useEffect(() => {
+		if (i18n.language !== language) {
+			i18n.changeLanguage(language);
+		}
+	}, [language]);
+	return null;
+}
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
-  );
+	return (
+		<ConvexProvider client={convex}>
+			<I18nSync />
+			<Stack screenOptions={{ headerShown: false }}>
+				<Stack.Screen name='(tabs)' />
+			</Stack>
+		</ConvexProvider>
+	);
 }

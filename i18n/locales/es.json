@@ -1,0 +1,60 @@
+{
+	"language": {
+		"label": "Idioma",
+		"en": "Inglés",
+		"es": "Español"
+	},
+	"header": {
+		"title": "Tareas por hacer",
+		"subtitle": "{{completed}} de {{total}} completadas"
+	},
+	"loading": {
+		"todos": "Cargando tus tareas..."
+	},
+	"todoInput": {
+		"placeholder": "¿Qué hay que hacer?",
+		"from": "Desde",
+		"to": "Hasta"
+	},
+	"todoList": {
+		"empty": "No hay tareas todavía.",
+		"emptySub": "¡Agrega una tarea para comenzar!"
+	},
+	"todoItem": {
+		"editPlaceholder": "Edita tu tarea...",
+		"editSave": "Guardar",
+		"editCancel": "Cancelar",
+		"confirmDelete": "¿Seguro que quieres eliminar esta tarea?",
+		"deleteTitle": "Confirmar eliminación",
+		"validationError": "El texto de la tarea no puede estar vacío",
+		"validationTitle": "Error de validación",
+		"errorToggle": "No se pudo cambiar el estado de la tarea",
+		"errorDelete": "No se pudo eliminar la tarea",
+		"errorUpdate": "No se pudo actualizar la tarea"
+	},
+	"settings": {
+		"title": "Configuración",
+		"preferences": "Preferencias",
+		"darkMode": "Modo oscuro",
+		"notifications": "Notificaciones",
+		"progressStats": "Estadísticas de progreso",
+		"dangerZone": "Zona peligrosa",
+		"resetApp": "Restablecer app",
+		"resetAppDesc": "Esto eliminará todas tus tareas y no se puede deshacer. ¿Estás seguro?",
+		"deleteAll": "Eliminar todo",
+		"cancel": "Cancelar",
+		"appReset": "App restablecida",
+		"resetSuccess": "Se eliminaron correctamente {{deleted}} de {{total}} tareas.",
+		"resetError": "No se pudo restablecer la app. Intenta de nuevo.",
+		"ok": "OK"
+	},
+	"progressStats": {
+		"total": "Total",
+		"completed": "Completadas",
+		"active": "Activas"
+	},
+	"tabs": {
+		"home": "Inicio",
+		"settings": "Configuración"
+	}
+}

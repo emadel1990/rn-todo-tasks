@@ -1,0 +1,60 @@
+{
+	"language": {
+		"label": "Language",
+		"en": "English",
+		"es": "Spanish"
+	},
+	"header": {
+		"title": "To Do Tasks",
+		"subtitle": "{{completed}} of {{total}} completed"
+	},
+	"loading": {
+		"todos": "Loading your todos..."
+	},
+	"todoInput": {
+		"placeholder": "What needs to be done?",
+		"from": "From",
+		"to": "To"
+	},
+	"todoList": {
+		"empty": "No todos yet.",
+		"emptySub": "Add a todo to get started!"
+	},
+	"todoItem": {
+		"editPlaceholder": "Edit your todo...",
+		"editSave": "Save",
+		"editCancel": "Cancel",
+		"confirmDelete": "Are you sure you want to delete this todo?",
+		"deleteTitle": "Confirm Delete",
+		"validationError": "Todo text cannot be empty",
+		"validationTitle": "Validation Error",
+		"errorToggle": "Failed to toggle todo",
+		"errorDelete": "Failed to delete todo",
+		"errorUpdate": "Failed to update todo"
+	},
+	"settings": {
+		"title": "Settings",
+		"preferences": "Preferences",
+		"darkMode": "Dark Mode",
+		"notifications": "Notifications",
+		"progressStats": "Progress Stats",
+		"dangerZone": "Danger Zone",
+		"resetApp": "Reset App",
+		"resetAppDesc": "This will delete all your todos and cannot be undone. Are you sure?",
+		"deleteAll": "Delete All",
+		"cancel": "Cancel",
+		"appReset": "App Reset",
+		"resetSuccess": "Successfully deleted {{deleted}} of {{total}} todos.",
+		"resetError": "Failed to reset app. Please try again.",
+		"ok": "OK"
+	},
+	"progressStats": {
+		"total": "Total",
+		"completed": "Completed",
+		"active": "Active"
+	},
+	"tabs": {
+		"home": "Home",
+		"settings": "Settings"
+	}
+}
